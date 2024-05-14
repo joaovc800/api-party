@@ -1,0 +1,77 @@
+POST http://10.113.52.24:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Algum service 2",
+    "description": "Descrição 2",
+    "price": 100,
+    "image": "https://media.starlightcms.io/workspaces/pague-menos/portal-sempre-bem/optimized/istock-1227545308-ya8rnoqcq7.jpeg"
+}
+
+###
+GET http://10.113.52.24:3000/api/services
+
+###
+GET http://10.113.52.24:3000/api/services/664298f9be7881ee6a799e36
+
+###
+DELETE http://10.113.52.24:3000/api/services/664298f9be7881ee6a799e33
+
+###
+PUT http://10.113.52.24:3000/api/services/664297952f20b30db557f8f8
+Content-Type: application/json
+
+{
+    "name": "TESTE ATUALIZA 3",
+    "description": "Descrição 2",
+    "price": 100,
+    "image": "https://media.starlightcms.io/workspaces/pague-menos/portal-sempre-bem/optimized/istock-1227545308-ya8rnoqcq7.jpeg"
+}
+
+###
+POST http://10.113.52.24:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "Mateus",
+    "description": "Uma festa de aniversário",
+    "budget": 9000,
+    "image": "https://media.starlightcms.io/workspaces/pague-menos/portal-sempre-bem/optimized/istock-1227545308-ya8rnoqcq7.jpeg",
+    "services": [
+        {
+             "name": "TESTE ATUALIZA 4",
+            "description": "Descrição 4",
+            "price": 3000,
+            "image": "https://media.starlightcms.io/workspaces/pague-menos/portal-sempre-bem/optimized/istock-1227545308-ya8rnoqcq7.jpeg"
+        },
+        {
+             "name": "TESTE ATUALIZA 5",
+            "description": "Descrição 5",
+            "price": 9900,
+            "image": "https://media.starlightcms.io/workspaces/pague-menos/portal-sempre-bem/optimized/istock-1227545308-ya8rnoqcq7.jpeg"
+        }
+    ]
+}
+
+###
+GET http://10.113.52.24:3000/api/parties
+
+###
+GET http://10.113.52.24:3000/api/parties/6642abb567cb3bd74cba092e
+
+###
+DELETE http://10.113.52.24:3000/api/parties/6642abf767cb3bd74cba0930
+
+###
+PUT http://10.113.52.24:3000/api/parties/6642af2567cb3bd74cba0934
+Content-Type: application/json
+
+{
+    "title": "Meu evento 21:53",
+    "author": "Mateus",
+    "description": "Uma festa de aniversário 21:53",
+    "budget": 9000,
+    "image": "https://media.starlightcms.io/workspaces/pague-menos/portal-sempre-bem/optimized/istock-1227545308-ya8rnoqcq7.jpeg",
+    "services": []
+}
