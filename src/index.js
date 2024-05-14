@@ -9,7 +9,7 @@ app.use(cors())
 const routes = require("./routes/router")
 app.use("/api", routes)
 
-app.listen(3000, '10.113.52.24', function(){
+app.listen(3000, function(){
     conn()
     console.log('Server on')
 })
