@@ -8,11 +8,6 @@ This is a RESTful API for managing party-related services, built using Mongoose,
 - Integration with MongoDB Atlas for cloud-based data storage.
 - Automatic server restart using Nodemon during development.
 
-## Installation
-
-1. Clone the repository:
-    git clone https://github.com/yourusername/party-services-api.git
-
 
 ## Usage
 
